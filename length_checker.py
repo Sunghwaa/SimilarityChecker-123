@@ -6,7 +6,10 @@ class LengthChecker:
         if self.is_length_diff_more_than_twice(str1, str2):
             return 0
 
-        return self.calc_score(str1, str2)
+        if len(str1) > len(str2):
+            return self.calc_score(str1, str2)
+        else:
+            return self.calc_score(str2, str1)
 
     def is_length_same(self, str1, str2):
         return len(str1) == len(str2)

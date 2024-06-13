@@ -16,3 +16,4 @@ class TestLengthChecker(TestCase):
 
     def test_length_score_when_length_diff_is_smaller_than_twice(self):
         self.assertEqual(20, self.checker.check("AAABB", "BAA"))
+        self.assertEqual(30, self.checker.check("AA", "AAE"))
