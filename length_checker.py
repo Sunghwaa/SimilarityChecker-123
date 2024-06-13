@@ -1,0 +1,2 @@
+class LengthChecker:
+    pass

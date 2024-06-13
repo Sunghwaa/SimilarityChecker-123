@@ -1,0 +1,2 @@
+class AlphaChecker:
+    pass
